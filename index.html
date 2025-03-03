@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Karbon</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator Jejak Karbon</h1>
+      
+      <h3>Elektronik Rumah Tangga</h3>
+      <label for="electronic-device">Alat Elektronik yang Digunakan:</label>
+      <select id="electronic-device">
+        <option value="lampu">Lampu</option>
+        <option value="ricecooker">Rice Cooker</option>
+        <option value="kulkas">Kulkas</option>
+        <option value="ac">AC</option>
+        <option value="kipas">Kipas Angin</option>
+        <option value="dispenser">Dispenser</option>
+        <option value="mesincuci">Mesin Cuci</option>
+        <option value="tv">Televisi</option>
+      </select>
+
+      <label for="usage-hours">Lama Jam Digunakan per Hari:</label>
+      <input type="number" id="usage-hours" placeholder="Masukkan jam penggunaan per hari">
+
+      <label for="usage-days">Lama Hari Digunakan per Bulan:</label>
+      <input type="number" id="usage-days" placeholder="Masukkan jumlah hari penggunaan per bulan">
+
+      <h3>Kendaraan</h3>
+      <label for="vehicle-type">Jenis Kendaraan:</label>
+      <select id="vehicle-type">
+        <option value="car">Mobil</option>
+        <option value="motorcycle">Motor</option>
+        <option value="bus">Bus</option>
+      </select>
+
+      <label for="travel-distance">Jarak Tempuh (km):</label>
+      <input type="number" id="travel-distance" placeholder="Masukkan jarak km">
+      <button id="total-calculate-btn">Hitung Jejak Karbon Total</button>
+
+      <h3>Hasil Jejak Karbon</h3>
+      <p id="result">0 kg CO<sub>2</sub></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
